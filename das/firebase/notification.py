@@ -3,8 +3,8 @@ import json
 
 from das.error import error_result
 from frappe.utils import get_request_session
-from topic import _get_topic
-from log import log_notification_success, log_notification_failed
+from das.firebase.topic import _get_topic
+from das.firebase.log import log_notification_success, log_notification_failed
 
 #FCM URL
 url = "https://fcm.googleapis.com/fcm/send"
